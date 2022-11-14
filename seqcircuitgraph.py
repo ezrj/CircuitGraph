@@ -90,7 +90,7 @@ for i in range(length):
             checkFF = True
             start = benchfile[i].find("(")
             end = benchfile[i].find(")")
-            numbers = benchfile[i][start+1:end] #not showing FF in in bck gates currently
+            numbers = benchfile[i][start+1:end] 
             numberslist = numbers.split(",")
 
         else:
@@ -179,7 +179,7 @@ for i in fwdlist:
 
 visited = set()
 
-# this loop is not working because you did not include the primary inputs in your fanin, so there is no 1[] for it to end on
+
 
 
 newlist = internals + outputs + FFin
